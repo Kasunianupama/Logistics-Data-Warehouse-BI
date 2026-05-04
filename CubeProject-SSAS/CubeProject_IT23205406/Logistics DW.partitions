@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="66879377-b586-4164-a4d7-d0e0d6ad279f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Logistics DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Delivery Events</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ecc3b818-04fd-4ea5-8331-a34fa6bb5f54">
+          <ID>Fact Delivery Events</ID>
+          <Name>Fact Delivery Events</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="671a2c2c-a8e6-4b35-bfaf-3359aec003b6">
+            <DataSourceViewID>Logistics DW</DataSourceViewID>
+            <TableID>dbo_FactDeliveryEvents</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Fuel Purchases</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="818f7de0-56cd-445a-a030-861745eba7a5">
+          <ID>Fact Fuel Purchases</ID>
+          <Name>Fact Fuel Purchases</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="7e1389c7-a657-4fcd-9dba-e62006eb51b3">
+            <DataSourceViewID>Logistics DW</DataSourceViewID>
+            <TableID>dbo_FactFuelPurchases</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Maintenance</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0175c01c-f7bb-4a4e-a0cb-6a4c3a2e01f4">
+          <ID>Fact Maintenance</ID>
+          <Name>Fact Maintenance</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="bc4c94bb-ac81-4b6e-aed7-bbfd44762b35">
+            <DataSourceViewID>Logistics DW</DataSourceViewID>
+            <TableID>dbo_FactMaintenance</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Trips</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="39e1afba-24c4-4e8c-8424-82640d9003d0">
+          <ID>Fact Trips</ID>
+          <Name>Fact Trips</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6c72ea1c-9e1e-40d1-a757-a2a6132dee02">
+            <DataSourceViewID>Logistics DW</DataSourceViewID>
+            <TableID>dbo_FactTrips</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
